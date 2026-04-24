@@ -1,103 +1,278 @@
-# Documento de Casos de Uso
+## Casos de Uso:
 
-## Lista dos Casos de Uso
+### Caso de uso 1: Gerenciar-se.
 
- - [CDU 01](#CDU-01): Quisque id neque a erat imperdiet dictum et ut mauris.
- - [CDU 02](#CDU-02): Morbi fringilla dolor at mattis vestibulum.
- - [CDU 03](#CDU-03): Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+#### Atores:
+
+- Cliente.
+  
+#### Fluxo principal:
+
+- O usuário seleciona a opção “Criar conta”.
+  
+- O sistema leva o usuário até a tela de registro contendo um formulário.
+  
+- O usuário preenche os campos do formulário (informando nome, e-mail e criando uma senha).
+  
+- O sistema consulta o banco de dados para verificar a disponibilidade das informações fornecidas.
+  
+- O banco de dados retorna uma confirmação positiva.
+  
+- O sistema realiza o cadastro, salvando os dados do novo usuário.
+  
+- O sistema encaminha o usuário para a página principal do site.
+
+### Caso de Uso 2: Efetuar login.
+
+#### Atores: 
+
+- Cliente
+
+#### Fluxo principal:
+
+- O usuário seleciona a opção "Login".
+
+- O sistema leva o usuário até a tela de preenchimento de senha e email.
+
+- Usuário preenche os campos da tela.
+
+- O sistema consulta o banco de dados para a confirmação dos dados inseridos.
+
+- O banco de dados retorna uma confirmação positiva.
+
+- O sistema encaminha o usuário para a página principal do site.
+
+  ### Caso de Uso 3: Buscar livros.
+
+#### Atores: 
+
+- Cliente e Administrador
+
+#### Fluxo principal: 
+
+- O sistema apresenta a página inicial do site.
+
+- O usuário aperta na barra de pesquisa.
+
+- O usuário digita o livro que deseja, o gênero de livro que deseja ou o autor.
+
+- O usuário aperta no botão "Enter".
+
+- O sistema consulta o banco de dados.
+
+- O banco retorna os livros.
+
+- Os livros são exibidos.
+
+- FIZ ATÉ AQUI
+
+ ### Caso de Uso 6: Categorias.
+
+#### Atores: 
+
+- Usuário
+
+#### Fluxo principal:  
+
+- O usuário seleciona o menu "Categorias".
+
+- O sistema carrega a lista de categorias disponíveis.
+
+- O usuário clica na categoria desejada.
+
+- O sistema busca os produtos pertecentes àquela categoria no banco de dados.
+
+- O sistema exibe os produtos filtrados pela categoria selecionada com informações.
+
+ ### Caso de Uso 7: Carrinho de compras.
+
+#### Atores: 
+
+- Usuário
+
+#### Fluxo principal:  
+
+- O usuário clica no ícone do "carrinho de compras".
+
+- O sistema redireciona o usuário para a página contendo os itens desejados.
+
+- O usuário pode iniciar o processo de compra dos produtos desejados.
+
+- O usuário preenche o cadastro com suas informações de endereço.
+
+- O usuário seleciona uma forma de pagamento.
+  
+- O usuário finaliza a compra e é redirecionado para a pagina inicial.
+
+#### Fluxo Alternativo A: Cancelar produto do Carrinho de compras
+
+- O usuário clica no ícone do "carrinho de compras".
+
+- O sistema redireciona o usuário para a página contendo os itens desejados.
+
+- O usuário aperta na lixeira (excluir produto).
+
+- O sistema exclui produto do banco de dados.
+
+ ### Caso de Uso 8: Pagina de pedidos.
+
+#### Atores: 
+
+- Usuário
+
+#### Fluxo principal:  
+
+- O usuário clica no icone da pagina de pedidos.
+
+- O sistema redireciona o usuário para a pagina contendo informações de seus pedidos.
+
+- O usuário consulta seus pedidos e volta para pagina inicial.
+
+ ### Caso de Uso 9: Logout
+
+#### Atores: 
+
+- Usuário
+
+#### Fluxo principal:  
+
+- O usuário acessa o menu do seu perfil com as configurações da sua conta e aperta o botão de "Logout".
+
+- O sistema apresenta uma mensagem perguntando "Quer confirmar o Logout?".
+
+- O usuário confirma.
+
+- O sistema apaga o login do usuário.
+
+- O sistema realoca o usuário para o menu do seu perfil com  as configurações da sua conta.
+
+#### Fluxo Alternativo A: Cancelar Logout
+
+- O usuário acessa o menu do seu perfil com as configurações da sua conta e aperta o botão de "Logout".
+
+- O sistema apresenta uma mensagem perguntando "Quer confirmar o Logout?".
+
+- O usuário decide que não quer mais fazer Logout e aperta o botão cancelar.
+
+- O sistema redireciona o usuário para o menu do seu perfil com  as configurações da sua conta.
+
+### Caso de Uso 10: Gerenciar Catálogo de produtos.
+
+#### Atores: 
+
+- Administrador 
+
+#### Fluxo principal: 
+
+- O administrador acessa o sistema.
+
+- Seleciona a opção "Catálogo de Produtos".
+
+- Visualiza a lista de produtos cadastrados.
+
+- Clica em "Adicionar Produto".
+
+- Preenche as informações do produto (nome, descrição, preço, imagem, categoria).
+
+- Clica em "Salvar".
+
+- O sistema adiciona o novo produto ao catálogo.
+
+#### Fluxo Alternativo A: Excluir produto do catálogo
+
+- O administrador acessa o sistema.
+
+- Seleciona a opção "Catálogo de Produtos".
+
+- Visualiza a lista de produtos cadastrados.
+
+- Clica em "Excluir produto do catálogo".
+
+- O sistema exclui produto do banco de dados.
 
 
-## Lista dos Atores
+### Caso de Uso 11: Gerenciar Categoria.
 
- - Cras tempor
- - Donec a lorem
+#### Atores:
 
-## Diagrama de Casos de Uso
+- Admninistrador
 
-![Diagrama de Casos de Uso](diagramas/diagrama-exemplo.png)
+#### Fluxos principal:
 
-## Descrição dos Casos de Uso
+- O administrador acessa o sistema.
 
-### CDU 01
+- Seleciona a opção "Categorias".
 
-Quisque id neque a erat imperdiet dictum et ut mauris.
+- Visualiza as categorias existentes.
 
-#### Atores
+- Clica em "Adicionar Categoria".
 
-1. Cras tempor
-2. Donec a lorem
+- Insere o nome da nova categoria.
 
-#### Fluxo Principal
+- Clica em "Salvar".
 
-1. Vivamus nec velit id risus sodales fermentum ut a mi.
-2. Nunc a ligula ac libero pellentesque auctor ornare at sem.
-3. In quis ante scelerisque felis luctus malesuada.
-4. Pellentesque mattis dui quis eleifend accumsan.
+- O sistema cadastra a nova categoria.
 
-**Diagrama de sequência XX**
+#### Fluxo Alternativo A: Excluir categoria
 
-![Diagrama de Sequência](diagramas/diagrama-exemplo.png)
+- O administrador acessa o sistema.
 
-#### Fluxo Alternativo A
+- Seleciona a opção "Categorias".
 
-1. Pellentesque id mauris id ex fringilla iaculis.
-2. Maecenas ut dui at sapien rhoncus porttitor in sed turpis.
-3. Maecenas fringilla augue id sodales volutpat.
-4. Nulla vehicula lectus eu eros faucibus porta.
-5. Morbi non sem in diam dictum aliquet sit amet at metus.
-6. Aenean dictum diam in tempus ornare.
+- Visualiza as categorias existentes.
 
-#### Fluxo Alternativo B
+- Clica em "Excluir Categoria".
 
-1. Ut elementum dolor id lorem elementum, et condimentum eros laoreet.
-2. Nulla sollicitudin arcu nec suscipit volutpat.
-3. Aliquam mattis sapien nec ornare faucibus.
-4. Sed eu massa nec enim condimentum commodo at eget ligula.
-5. Nam ultricies velit nec erat feugiat condimentum.
-6. Nam vitae lacus porttitor, sodales orci vel, lobortis arcu.
+- O sistema exclui categoria do banco de dados.
 
+### Caso de Uso 12: Editar pedidos.
 
-### CDU 02
+#### Atores:
 
-Morbi fringilla dolor at mattis vestibulum.
+- Administrador
 
-#### Atores
+#### Fluxo principal: 
 
-1. Cras tempor
+- O administrador acessa o sistema.
 
-#### Fluxo Principal
+- O administrador seleciona "Pedidos" e visualiza.
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
+- O administrador clica em um pedido para ver detalhes.
 
-#### Fluxo Alternativo A
+- O administrador atualiza o status do pedido, por exempo, "em entrega" ou "concluído".
 
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
+- O sistema registra a atualização.
 
-### CDU 03
+### Caso de Uso 13: Gerenciar clientes. 
 
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+#### Atores: 
 
-#### Atores
+- Administrador
 
-1. Donec a lorem
+#### Fluxo principal: 
 
-#### Fluxo Principal
+- O administrador acessa o sistema.
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+- O administrador vai até a seção "Clientes".
 
-#### Fluxo Alternativo A
+- O administrador visualiza a lista de clientes cadastrados.
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+- O administrador clica sobre um cliente para ver detalhes.
+
+- O administrador pode optar por editar ou excluir o cadastro.
+
+### Caso de Uso 14: Acessar relatório de vendas.
+
+#### Atores: 
+
+- Administrador
+
+#### Fluxo principal:
+
+- O administrador acessa o sistema.
+
+- O administrador seleciona "Relatórios" no menu.
+
+- O administrador escolhe o período desejado.
+
+- O sistema exibe o relatório com as vendas no período.
