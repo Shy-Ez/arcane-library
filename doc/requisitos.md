@@ -1,21 +1,59 @@
-# Documento de Requisitos
+# REQUISITOS FUNCIONAIS
 
-## Requisitos Funcionais
+## RF01
 
-### RF 01
+CADASTRAR USUÁRIO
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec blandit nulla vel diam vehicula, eu porttitor nulla aliquam.
+## RF02
 
-### RF 02
+DISPONIBILIZAR GÊNERO DO LIVRO
 
-Nullam laoreet, mauris ac tempor vulputate, orci metus aliquet augue, at accumsan odio mi eu sapien. Aliquam tincidunt metus ut aliquet vehicula. Aliquam vitae arcu sed lacus fermentum sagittis.
+## RF03
 
-## Requisitos Não-Funcionais
+DISPONIBILIZAR SINOPSE DO LIVRO
 
-### RNF 01
+## RF04
 
-Nulla facilisi. Etiam tempus dolor et odio tincidunt fermentum. Donec pharetra nulla eu euismod maximus. Maecenas eu mauris tincidunt, pulvinar tellus sed, blandit eros.
+DISPONIBILIZAR BIOGRAFIA DO AUTOR
 
-### RNF 02
+## RF05
 
-Nam id enim ut quam faucibus scelerisque at non diam. Morbi eget eleifend lectus, quis fringilla elit. Morbi iaculis, elit vel accumsan hendrerit, ipsum purus varius lacus, eget facilisis massa mauris ac ipsum.
+CRUD DE LIVROS (ADMINISTRADOR)
+
+## RF06
+
+SISTEMA DE PEDIDOS
+
+## RF07
+
+SISTEMA DE MULTAS
+
+## RF08
+
+BUSCA DE LIVROS
+
+## RF09
+
+LOGIN DE USUÁRIOS
+
+## RF10
+
+POSSIBILIDADE DE COMENTÁRIO SOBRE O LIVRO (USUARIO)
+
+# REQUISITOS NÃO FUNCIONAIS
+
+## RNF01
+
+SEGURANÇA
+
+## RNF02
+
+RESPONSIVIDADE
+
+## RNF03
+
+BANCO DE DADOS POSTGRE
+
+## RNF04
+
+USABILIDADE
