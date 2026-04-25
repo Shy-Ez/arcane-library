@@ -1,6 +1,6 @@
 ## Casos de Uso:
 
-### Caso de uso 1: Gerenciar-se.
+### Caso de uso 1: Efetuar cadastro.
 
 #### Atores:
 
@@ -8,11 +8,11 @@
   
 #### Fluxo principal:
 
-- O usuário seleciona a opção “Criar conta”.
+- O cliente seleciona a opção “Criar conta”.
   
 - O sistema leva o usuário até a tela de registro contendo um formulário.
   
-- O usuário preenche os campos do formulário (informando nome, e-mail e criando uma senha).
+- O cliente preenche os campos do formulário (informando nome, e-mail e criando uma senha).
   
 - O sistema consulta o banco de dados para verificar a disponibilidade das informações fornecidas.
   
@@ -26,7 +26,7 @@
 
 #### Atores: 
 
-- Cliente
+- Usuário.
 
 #### Fluxo principal:
 
@@ -34,7 +34,7 @@
 
 - O sistema leva o usuário até a tela de preenchimento de senha e email.
 
-- Usuário preenche os campos da tela.
+- O usuário preenche os campos da tela.
 
 - O sistema consulta o banco de dados para a confirmação dos dados inseridos.
 
@@ -46,7 +46,7 @@
 
 #### Atores: 
 
-- Cliente e Administrador
+- Usuário.
 
 #### Fluxo principal: 
 
@@ -64,57 +64,62 @@
 
 - Os livros são exibidos.
 
-- FIZ ATÉ AQUI
-
- ### Caso de Uso 6: Categorias.
-
+ ### Caso de Uso 4: Comentar.
+ 
 #### Atores: 
 
-- Usuário
+- Usuário.
 
 #### Fluxo principal:  
 
-- O usuário seleciona o menu "Categorias".
+- O cliente abre a aba de um livro específico.
 
-- O sistema carrega a lista de categorias disponíveis.
+- O cliente aperta em um botão de comentário.
 
-- O usuário clica na categoria desejada.
+- O sistema abre uma página de comentários do tal livro.
 
-- O sistema busca os produtos pertecentes àquela categoria no banco de dados.
+- O cliente escreve o seu comentário.
 
-- O sistema exibe os produtos filtrados pela categoria selecionada com informações.
+- O cliente aperta em um botão de publicar em comentário.
 
- ### Caso de Uso 7: Carrinho de compras.
+- O sistema pede confimação do usuário.
+
+- O cliente confirma a publicação.
+
+- O sistema publica o comentário.
+
+
+
+
+
+ ### Caso de Uso 5: Efetuar aluguel.
 
 #### Atores: 
 
-- Usuário
+- Bibliotecário.
 
 #### Fluxo principal:  
 
-- O usuário clica no ícone do "carrinho de compras".
+- O bibliotecário inicia o processo de aluguel.
 
-- O sistema redireciona o usuário para a página contendo os itens desejados.
+- O bibliotecário preenche o código do livro a ser alugado.
 
-- O usuário pode iniciar o processo de compra dos produtos desejados.
+- O sistema exibe os dados do livro a ser alugado.
 
-- O usuário preenche o cadastro com suas informações de endereço.
+- O bibliotecário preenche a identificação do cliente.
 
-- O usuário seleciona uma forma de pagamento.
+-O sistema exibe um prazo pra devolução. 
   
-- O usuário finaliza a compra e é redirecionado para a pagina inicial.
+- O bibliotecário finaliza o aluguel e é redirecionado para a pagina inicial.
 
-#### Fluxo Alternativo A: Cancelar produto do Carrinho de compras
 
-- O usuário clica no ícone do "carrinho de compras".
 
-- O sistema redireciona o usuário para a página contendo os itens desejados.
 
-- O usuário aperta na lixeira (excluir produto).
 
-- O sistema exclui produto do banco de dados.
 
- ### Caso de Uso 8: Pagina de pedidos.
+
+
+ ### Caso de Uso 6: Pagina de pedidos.
 
 #### Atores: 
 
