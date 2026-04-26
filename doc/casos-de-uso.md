@@ -22,6 +22,9 @@
   
 - O sistema encaminha o usuário para a página principal do site.
 
+
+
+
 ### Caso de Uso 2: Efetuar login.
 
 #### Atores: 
@@ -42,11 +45,15 @@
 
 - O sistema encaminha o usuário para a página principal do site.
 
-  ### Caso de Uso 3: Buscar livros.
+
+
+
+### Caso de Uso 3: Buscar livros.
 
 #### Atores: 
 
 - Usuário.
+Regras de uso
 
 #### Fluxo principal: 
 
@@ -64,11 +71,16 @@
 
 - Os livros são exibidos.
 
- ### Caso de Uso 4: Comentar.
+
+
+
+### Caso de Uso 4: Comentar.
  
 #### Atores: 
 
 - Usuário.
+
+#### Regras de uso: O cliente pode comentar e apagar o comentário. O administrador só pode apagar um comentário.
 
 #### Fluxo principal:  
 
@@ -91,193 +103,153 @@
 
 
 
-
- ### Caso de Uso 5: Efetuar aluguel.
+### Caso de Uso 5: Efetuar aluguel.
 
 #### Atores: 
 
-- Bibliotecário.
+- Administrador.
 
 #### Fluxo principal:  
 
-- O bibliotecário inicia o processo de aluguel.
+- O administrador inicia o processo de aluguel.
 
-- O bibliotecário preenche o código do livro a ser alugado.
+- O administrador preenche o código do livro a ser alugado.
 
 - O sistema exibe os dados do livro a ser alugado.
 
-- O bibliotecário preenche a identificação do cliente.
+- O administrador preenche a identificação do cliente.
 
 -O sistema exibe um prazo pra devolução. 
   
-- O bibliotecário finaliza o aluguel e é redirecionado para a pagina inicial.
+- O administrador finaliza o aluguel e é redirecionado para a pagina inicial.
 
 
+ 
 
-
-
-
-
-
- ### Caso de Uso 6: Pagina de pedidos.
+### Caso de Uso 6: Finalizar aluguel.
 
 #### Atores: 
 
-- Usuário
+- Administrador.
 
 #### Fluxo principal:  
 
-- O usuário clica no icone da pagina de pedidos.
+- O administrador abre a página de aluguéis do cliente.
 
-- O sistema redireciona o usuário para a pagina contendo informações de seus pedidos.
+- O administrador clica na opção de dar baixa no livro.
 
-- O usuário consulta seus pedidos e volta para pagina inicial.
+- O sistema pede confirmação.
 
- ### Caso de Uso 9: Logout
+- O administrador confirma.
+
+- O sistema volta pra página inicial.
+
+
+
+
+### Caso de Uso 7: Gerenciar livros.
 
 #### Atores: 
 
-- Usuário
+- Administrador.
 
 #### Fluxo principal:  
 
-- O usuário acessa o menu do seu perfil com as configurações da sua conta e aperta o botão de "Logout".
+- O administrador abre a página de um livro.
 
-- O sistema apresenta uma mensagem perguntando "Quer confirmar o Logout?".
+- O administrador aperta no botão de editar livro.
 
-- O usuário confirma.
+- O administrador escolhe o que quer editar.
 
-- O sistema apaga o login do usuário.
+- O administrador edita.
 
-- O sistema realoca o usuário para o menu do seu perfil com  as configurações da sua conta.
+- O administrador aperta no botão de editar.
 
-#### Fluxo Alternativo A: Cancelar Logout
+- O sistema pede confirmação.
 
-- O usuário acessa o menu do seu perfil com as configurações da sua conta e aperta o botão de "Logout".
+- O administrador confirma.
 
-- O sistema apresenta uma mensagem perguntando "Quer confirmar o Logout?".
+- O sistema avisa que a edição foi feita.
 
-- O usuário decide que não quer mais fazer Logout e aperta o botão cancelar.
 
-- O sistema redireciona o usuário para o menu do seu perfil com  as configurações da sua conta.
 
-### Caso de Uso 10: Gerenciar Catálogo de produtos.
+
+### Caso de Uso 8: Gerenciar usuários.
 
 #### Atores: 
 
-- Administrador 
+- Administrador.
 
 #### Fluxo principal: 
 
-- O administrador acessa o sistema.
+- O administrador vai para a página de usuários.
 
-- Seleciona a opção "Catálogo de Produtos".
+- O administrador escolhe um usuário.
 
-- Visualiza a lista de produtos cadastrados.
+- O administrador clica no perfil do usuário.
 
-- Clica em "Adicionar Produto".
+- O administrador entra no perfil do usuário.
 
-- Preenche as informações do produto (nome, descrição, preço, imagem, categoria).
+- O administrador clica no botão de apagar usuário.
 
-- Clica em "Salvar".
+- O sistema pede confirmação.
 
-- O sistema adiciona o novo produto ao catálogo.
+- O administrador confirma.
 
-#### Fluxo Alternativo A: Excluir produto do catálogo
+- O sistema apaga o usuário.
 
-- O administrador acessa o sistema.
-
-- Seleciona a opção "Catálogo de Produtos".
-
-- Visualiza a lista de produtos cadastrados.
-
-- Clica em "Excluir produto do catálogo".
-
-- O sistema exclui produto do banco de dados.
+- O sistema manda uma mensagem de que o usuário foi apagado.
 
 
-### Caso de Uso 11: Gerenciar Categoria.
+
+
+### Caso de Uso 9: Gerenciar perfil.
 
 #### Atores:
 
-- Admninistrador
+- Cliente.
 
 #### Fluxos principal:
 
-- O administrador acessa o sistema.
+- O cliente clica no ícone do próprio perfil.
 
-- Seleciona a opção "Categorias".
+- O sistema abre a página do perfil do cliente.
 
-- Visualiza as categorias existentes.
+- O cliente clica em editar informações do perfil.
 
-- Clica em "Adicionar Categoria".
+- O cliente edita as informações do perfil.
 
-- Insere o nome da nova categoria.
+- O cliente clica no botão de editar.
 
-- Clica em "Salvar".
+- O sistema pede confirmação.
 
-- O sistema cadastra a nova categoria.
+- O cliente confirma.
 
-#### Fluxo Alternativo A: Excluir categoria
+- O sistema edita as informações.
 
-- O administrador acessa o sistema.
+- O sistema manda uma mensagem dizendo que a edição foi feita.
 
-- Seleciona a opção "Categorias".
 
-- Visualiza as categorias existentes.
 
-- Clica em "Excluir Categoria".
 
-- O sistema exclui categoria do banco de dados.
-
-### Caso de Uso 12: Editar pedidos.
+### Caso de Uso 10: Efetuar multa.
 
 #### Atores:
 
-- Administrador
+- Administrador.
 
 #### Fluxo principal: 
 
-- O administrador acessa o sistema.
+- O administrador entra no perfil do usuário.
 
-- O administrador seleciona "Pedidos" e visualiza.
+- O administrador verifica que ele passou do prazo.
 
-- O administrador clica em um pedido para ver detalhes.
+- O administrador clica em multar o usuário.
 
-- O administrador atualiza o status do pedido, por exempo, "em entrega" ou "concluído".
+- O sistema pede confirmação.
 
-- O sistema registra a atualização.
+- O administrador confirma.
 
-### Caso de Uso 13: Gerenciar clientes. 
+- O sistema multa o usuário.
 
-#### Atores: 
-
-- Administrador
-
-#### Fluxo principal: 
-
-- O administrador acessa o sistema.
-
-- O administrador vai até a seção "Clientes".
-
-- O administrador visualiza a lista de clientes cadastrados.
-
-- O administrador clica sobre um cliente para ver detalhes.
-
-- O administrador pode optar por editar ou excluir o cadastro.
-
-### Caso de Uso 14: Acessar relatório de vendas.
-
-#### Atores: 
-
-- Administrador
-
-#### Fluxo principal:
-
-- O administrador acessa o sistema.
-
-- O administrador seleciona "Relatórios" no menu.
-
-- O administrador escolhe o período desejado.
-
-- O sistema exibe o relatório com as vendas no período.
+- O sistema manda uma mensagem dizendo que a multa foi feita.
